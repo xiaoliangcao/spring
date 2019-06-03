@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    consul-client:
+      path: /client/**
+      serviceId: consul-client
+      stripPredix: true
+
+consul-client:
+  ribbon:
+    listOfServers: 127.0.0.1:6688
