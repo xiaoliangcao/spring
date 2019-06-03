@@ -1,7 +1,7 @@
 zuul:
   routes:
     consul-client:
-      path: /client/**
+      path: /clients/**
       serviceId: consul-client
       stripPredix: true
 
